@@ -19,8 +19,6 @@ const MainChart = () => {
     },
   ]);
 
-  console.log(series);
-  
   return (
     <Flex
       p={"2rem"}

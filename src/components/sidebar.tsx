@@ -24,6 +24,7 @@ const Sidebar = () => {
       <Flex as="img" src={logo} w={'128px'} m={'auto'}/>
       {router.map((i) => (
         <Flex
+        key={i.path}
           align={"center"}
           gap={"1rem"}
           cursor={"pointer"}

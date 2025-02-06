@@ -4,6 +4,7 @@ import { lightArrow } from "./svg";
 
 const chartLabel = [
   {
+    id:0,
     title: "بسته‌بندی",
     color: "#E64A19",
     percent: "(+2.98%)",
@@ -11,6 +12,7 @@ const chartLabel = [
     status: "success",
   },
   {
+    id:1,
     title: "فروش",
     color: "#FF5722",
     percent: "(-3.25%)",
@@ -18,6 +20,7 @@ const chartLabel = [
     status: "failed",
   },
   {
+    id:2,
     title: "بخش‌های تولید",
     color: "#F57C00",
     percent: "(+0.14%)",
@@ -25,6 +28,7 @@ const chartLabel = [
     status: "success",
   },
   {
+    id:3,
     title: "دیگر",
     color: "#FFB74D",
     percent: "(-1.11%)",
@@ -70,9 +74,9 @@ const CircleChart = () => {
           height="240px"
         />
         <Flex direction={"column"} gap={5}>
-          {chartLabel.map((i, index) => (
-            <Flex justify={"space-between"} align={"center"}>
-              <Flex align={"center"} gap={2} key={index}>
+          {chartLabel.map((i) => (
+            <Flex  key={i.id} justify={"space-between"} align={"center"}>
+              <Flex align={"center"} gap={2}>
                 <Box
                   width={"9px"}
                   height={"9px"}

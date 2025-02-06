@@ -87,8 +87,8 @@ export const lightArrow = (
     xmlns="http://www.w3.org/2000/svg"
   >
     <path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M0.786525 0.454494C0.545117 0.695902 0.545117 1.0873 0.786525 1.32871L4.9945 5.53669C4.99863 5.54105 5.00282 5.54537 5.0071 5.54965C5.12785 5.6704 5.28613 5.73075 5.44439 5.7307C5.60265 5.73075 5.76093 5.6704 5.88168 5.54965C5.88595 5.54537 5.89015 5.54105 5.89427 5.53669L10.1023 1.32871C10.3437 1.0873 10.3437 0.695902 10.1023 0.454494C9.86084 0.213085 9.46944 0.213085 9.22803 0.454494L5.44439 4.23814L1.66074 0.454494C1.41933 0.213085 1.02793 0.213085 0.786525 0.454494Z"
       fill="#615E83"
     />
@@ -106,9 +106,9 @@ export const burger = (
     <path
       d="M3 12H21M3 6H21M3 18H21"
       stroke="#667085"
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     />
   </svg>
 );

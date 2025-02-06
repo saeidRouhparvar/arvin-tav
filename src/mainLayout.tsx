@@ -9,14 +9,19 @@ import {
   GridItem,
   useDisclosure,
 } from "@chakra-ui/react";
-import { Outlet } from "react-router-dom";
+import { Outlet, useNavigate } from "react-router-dom";
 import Sidebar from "./components/sidebar";
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import { burger } from "./components/svg";
 
 const MainLayout = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = useRef<HTMLDivElement>(null);
+
+  const navigate = useNavigate();
+  useEffect(() => {
+    navigate("/dashboard");
+  }, []);
   return (
     <Grid
       templateColumns={{ base: "1fr", lg: "1.05fr 4fr" }}
