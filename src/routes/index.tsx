@@ -10,11 +10,20 @@ import EffectiveManaging from "../pages/effectiveManaging";
 import DaneshManaging from "../pages/daneshManaging";
 import TestManaging from "../pages/testManaging";
 import Bachelor from "../pages/bachelor";
-import Follow from "../pages/follow";
-import Configuration from "../pages/configuration";
 import LearningRow from "../pages/learningRow";
-import Executive from "../pages/executive";
-import { dashboard, network,create,learn, requset, answer, my, effective, managing, test, bachelor, execute } from "../components/icons/icons";
+import {
+  dashboard,
+  network,
+  create,
+  learn,
+  requset,
+  answer,
+  my,
+  effective,
+  managing,
+  test,
+  bachelor,
+} from "../components/icons/icons";
 
 export const routes = [
   {
@@ -100,27 +109,7 @@ export const routes = [
         element: <Bachelor />,
         showInNav: true,
       },
-      {
-        path: "executive",
-        name: "کارتابل اجرایی",
-        icon: execute,
-        element: <Executive />,
-        showInNav: true,
-      },
-      {
-        path: "follow",
-        name: "کارتابل پیگیری",
-        icon: "",
-        element: <Follow />,
-        showInNav: true,
-      },
-      {
-        path: "configuration",
-        name: "پیکربندی",
-        icon: "",
-        element: <Configuration />,
-        showInNav: true,
-      },
+     
     ],
   },
 ];
